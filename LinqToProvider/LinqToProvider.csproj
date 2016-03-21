@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbQueryProvider.cs" />
+    <Compile Include="NorthwindModel.cs" />
+    <Compile Include="ObjectReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="QueryProvider.cs" />
