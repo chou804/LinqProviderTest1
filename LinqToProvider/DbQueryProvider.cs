@@ -42,7 +42,8 @@ namespace LinqToProvider
                     null
                     );
             }
-            else {
+            else
+            {
                 return Activator.CreateInstance(
                     typeof(ObjectReader<>).MakeGenericType(elementType),
                     BindingFlags.Instance | BindingFlags.NonPublic, null,
