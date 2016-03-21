@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbQueryProvider.cs" />
+    <Compile Include="Evaluator.cs" />
     <Compile Include="NorthwindModel.cs" />
     <Compile Include="ObjectReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
