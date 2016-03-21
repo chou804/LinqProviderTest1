@@ -21,15 +21,15 @@ namespace LinqProviderTest1
 
                 string city = "London";
 
-                IQueryable<Customers> query =
-                     db.Customers.Where(c => c.City == city);
+                var query = db.Customers.Where(c => c.City == city)
+                                        .Select(c => new { Name = c.ContactName, Phone = c.Phone });
 
                 Console.WriteLine("Query:\n{0}\n", query);
 
                 var list = query.ToList();
                 foreach (var item in list)
                 {
-                    Console.WriteLine("Name: {0}", item.ContactName);
+                    Console.WriteLine("{0}", item);
                 }
 
                 Console.ReadLine();
